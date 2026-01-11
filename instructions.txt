@@ -1,0 +1,46 @@
+Chess Game Application - Usage Instructions
+
+Overview:
+This is a GUI-based two-player chess game built using C++ and the Qt framework.
+The game closely follows the standard rules of chess and includes an intuitive
+interface for making moves, viewing game status, and restarting or quitting the game.
+
+The application is intended to help evaluate core game logic, GUI integration,
+and basic user interaction.
+
+Game Rules:
+- The game is played on a standard 8x8 chessboard.
+- Each player (White and Black) takes turns to move their pieces.
+- The game starts with White's turn.
+- Only valid chess moves are allowed.
+- A move is made by first selecting a piece and then clicking on one of its valid destinations.
+- If a player is in a checkmate state, the game ends and the other player is declared the winner.
+- Basic checkmate and win conditions are supported, assuming they are implemented in the Chess logic backend.
+
+Controls and Features:
+1. Chessboard Interaction:
+   - Click on any of your pieces to see their valid moves.
+   - Valid destination squares will be highlighted.
+   - Click again on a valid square to move the piece there.
+
+2. Game Information Panel:
+   - The right-side panel displays whose turn it is.
+   - After each move, the information panel updates automatically.
+   - End-of-game messages ("Black won!" or "White won!") are also displayed here.
+
+3. Buttons:
+   - Restart: Resets the game to the initial position.
+   - Quit: Closes the application window.
+
+4. Graphics:
+   - The board alternates between black and white tiles.
+   - Each piece is represented with a graphical icon corresponding to its type and color.
+   - Highlighted squares show legal moves in red borders.
+
+Instructions to Run:
+- Make sure all required Qt resources (like icons in the `:/pieces/` path) are available.
+- Compile the project using Qt Creator or a CMake-supported environment.
+- Run the executable to launch the GUI.
+
+Limitations:
+- No support for en passant, castling, or pawn promotion
